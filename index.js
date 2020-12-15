@@ -14,6 +14,6 @@ router.get('/', (req, res) => {
 //stays in index
 mongoose.connect('mongodb://localhost:27017/auth', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
-    server.start(3000)
+    server.start(process.env.PORT || 3000)
   })
   .catch(e => console.error('Could not start server', e.message));
