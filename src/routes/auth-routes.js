@@ -1,4 +1,6 @@
 'use strict';
+const bcrypt = require('bcrypt');
+const base64 = require('base-64');
 const express = require('express');
 const router = express.Router();
 const Users = require('../models/auth-schema');
