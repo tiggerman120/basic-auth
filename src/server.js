@@ -17,10 +17,10 @@ app.use(router)
 
 module.exports = {
   server: app,
-  start: PORT => {
-    if(!PORT) { throw new Error('missing port');}
-    app.listen(process.env.PORT || PORT, () => {
-      console.log(`listening on ${PORT}`);
+  start: port => {
+    if(!port) { throw new Error('missing port');}
+    app.listen(port, () => {
+      console.log(`listening on ${port}`);
     });
   },
 };
