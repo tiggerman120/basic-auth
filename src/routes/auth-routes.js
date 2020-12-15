@@ -17,7 +17,7 @@ router.post('/signup', async (req, res) => {
     console.log('1', req.body.password)
     const user = new Users(req.body);
     console.log('2', user);
-    const record = await user.save(req.body);
+    const record = await user.save();
     console.log('3', record)
     res.status(201).json(record);
   } catch (e) { console.log(e); res.status(403).send("Error Creating User"); }
