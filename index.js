@@ -4,8 +4,11 @@ require('dotenv').config
 const server = require('./src/server');
 const PORT = process.env.PORT;
 const mongoose = require('mongoose');
+const router = require('./src/routes/auth-routes');
 
-
+router.get('/', (req, res) => {
+  res.status(200).json('hello world');
+})
 
 
 //stays in index
