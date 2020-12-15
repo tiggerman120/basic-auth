@@ -4,7 +4,7 @@ const bcrypt = require('bcrypt');
 const base64 = require('base-64');
 const Users = require('../models/auth-schema');
 
-async function signingIn (req, res) {
+async function signingIn (req, res, next) {
   /*
     req.headers.authorization is : "Basic sdkjdsljd="
     To get username and password from this, take the following steps:
@@ -44,6 +44,7 @@ async function signingIn (req, res) {
       throw new Error('Invalid User')
     }
   } catch (error) { res.status(403).send("Invalid Login"); }
+  next();
 }
 
 module.exports = signingIn;
