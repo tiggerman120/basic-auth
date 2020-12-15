@@ -5,6 +5,9 @@ const server = require('./src/server');
 const PORT = process.env.PORT;
 const mongoose = require('mongoose');
 
+
+
+
 //stays in index
 mongoose.connect('mongodb://localhost:27017/auth', { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {

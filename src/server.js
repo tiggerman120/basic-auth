@@ -12,7 +12,9 @@ app.use(express.json());//lets you use raw json object
 app.use(express.urlencoded({ extended: true }));//lets you do a form set of data
 
 app.use(router)
-
+app.get('/', (req, res) => {
+  res.status(200).json('hello world');
+})
 
 
 module.exports = {
