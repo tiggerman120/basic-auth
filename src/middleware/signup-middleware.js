@@ -13,8 +13,8 @@ async function signingUp(req, res, next) {
     const user = new Users(req.body);
     console.log('2', user);
     const record = await user.save(req.body);
-    console.log('3', record)
-    
+    //console.log('3', record)
+    res.status(201).json(record);
   } catch (e) { console.log(e); res.status(403).send("Error Creating User"); }
   next();
 }

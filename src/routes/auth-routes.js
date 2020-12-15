@@ -11,7 +11,7 @@ const signupMiddleware = require('../middleware/signup-middleware');
 
 
 router.post('/signup', signupMiddleware, async (req, res) => {
-  res.status(201).json(record);
+ 
 });
 // Signup Route -- create a new user
 // Two ways to test this route with httpie
