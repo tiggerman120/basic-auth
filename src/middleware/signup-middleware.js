@@ -14,7 +14,7 @@ async function signingUp(req, res, next) {
     console.log('2', user);
     const record = await user.save(req.body);
     console.log('3', record)
-    res.status(201).json(record);
+    
   } catch (e) { console.log(e); res.status(403).send("Error Creating User"); }
   next();
 }
