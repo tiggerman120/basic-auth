@@ -1,0 +1,29 @@
+{
+  "name": "basic-auth",
+  "version": "1.0.0",
+  "description": "LAB - Class xx Project: Project Name Here Author: Student/Group Name Links and Resources ci/cd (GitHub Actions) back-end server url (when applicable) front-end application (when applicable) Setup .env requirements (where applicable) i.e.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiggerman120/basic-auth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiggerman120/basic-auth/issues"
+  },
+  "homepage": "https://github.com/tiggerman120/basic-auth#readme",
+  "dependencies": {
+    "base-64": "^1.0.0",
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8",
+    "supergoose": "^0.2.6"
+  }
+}
