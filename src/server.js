@@ -19,7 +19,7 @@ module.exports = {
   server: app,
   start: PORT => {
     if(!PORT) { throw new Error('missing port');}
-    app.listen(PORT, () => {
+    app.listen(process.env.PORT || PORT, () => {
       console.log(`listening on ${PORT}`);
     });
   },
