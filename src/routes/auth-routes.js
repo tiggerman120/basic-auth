@@ -8,7 +8,9 @@ const Users = require('../models/auth-schema');
 const authMiddleware = require('../middleware/auth-middleware');
 const signupMiddleware = require('../middleware/signup-middleware');
 
-
+router.get('/', (req, res) => {
+  res.status(200).json('hello world');
+})
 
 router.post('/signup', signupMiddleware, async (req, res) => {
  
